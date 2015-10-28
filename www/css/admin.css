@@ -1,0 +1,46 @@
+.wrap {
+  width: 1280px !important;
+}
+
+.col-md-4.menu {
+  height: 800px;
+  background-color: #9ac459;
+  padding: 0px;
+}
+.header{
+  background: #efefef;
+  padding: 40px 10px;
+}
+.text_admin{
+  font-family: MinionProIt;
+  width: 250px;
+}
+ul.ul_admin {
+  margin-top: 50px;
+  padding: 0px;
+}
+ul.ul_admin>li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: pfdintextcomppro-regular;
+  line-height: 47px;
+}
+ul.ul_admin>li:hover {
+  background: white;
+  cursor: pointer;
+
+}
+ul.ul_admin>li>a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100% !important;
+    height: 100%;
+}
+ul.ul_admin>li>a:focus {
+  background: white;
+}

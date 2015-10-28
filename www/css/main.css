@@ -1,0 +1,321 @@
+a{
+  text-decoration: none;
+}
+a:focus {
+  color: black;
+  text-decoration: none !important;
+}
+button.btn.dropdown-toggle.btn-default {
+  border: none;
+}
+.btn-default:hover {
+  color: inherit !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+.btn-group.bootstrap-select {
+  border: none;
+  border-bottom: 1px solid #c2c4c2;
+  width: 360px;
+  margin: 0 auto;
+  display: block;
+  height: 60px;
+  font-size: 18px;
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{
+  font-size: 18px;
+  font-family: pfdintextcomppro-regular;
+  line-height: 47px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: left;
+  margin-left: -10px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 360px ;
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"] {
+  display: block;
+  margin-left: auto;
+}
+span.filter-option.pull-left:focus {
+  outline: none;
+}
+
+button.btn.dropdown-toggle.btn-default {
+  outline: none !important;
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+  background-color: inherit;
+}
+.btn.active, .btn:active {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.btn-default.focus, .btn-default:focus {
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+button.btn.dropdown-toggle.btn-default:active {
+  background-color: inherit !important;
+}
+.btn-group.bootstrap-select:focus {
+  outline: none;
+}
+button.btn.dropdown-toggle.btn-default:focus {
+  /* background-color: red !important; */
+  box-shadow: inherit !important;
+}
+.dropdown-menu.open {
+  position: absolute;
+  border-radius: 0px !important;
+  top: -5% !important;
+  border: 3px solid #D1D1D1 !important;
+
+}
+.bootstrap-select.hour {
+  width: 10px !important;
+  border-bottom: none !important;
+}
+.time{
+  border: none;
+  border-bottom: 1px solid #c2c4c2;
+  width: 360px;
+  margin: 0 auto;
+  display: block;
+  height: 60px;
+  font-size: 18px;
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+}
+
+.bootstrap-select.hour {
+  width: 60px !important;
+  display: inline-block !important;
+}
+
+.hour>.dropdown-menu.open {
+  position: absolute;
+  border-radius: 0px !important;
+  top: -155% !important;
+  border: 3px solid #D1D1D1 !important;
+  max-height: 100000px !important;
+  height: 320px;
+}
+
+.hour>.dropdown-menu.open>ul.dropdown-menu.inner {
+
+  max-height: 10000px !important;
+  min-height: 80px;
+  overflow-y: hidden !important;
+
+}
+
+.minutes>.dropdown-menu.open {
+  position: absolute;
+  border-radius: 0px !important;
+  top: -50% !important;
+  border: 3px solid #D1D1D1 !important;
+  max-height: 100000px !important;
+  height: 125px;
+}
+
+.datepicker table {
+  width: 100% !important;
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+  /*top: 410px !important;*/
+  left: 270px;
+  z-index: 1060;
+  display: block;
+  width: 360px;
+  border: 3px solid #D1D1D1 !important;
+}
+
+th.datepicker-switch {
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+td.day {
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.btnZap {
+  margin-bottom: 50px;
+}
+.msg_quest{
+  text-align: center;
+  width: 47%;
+  margin: 25px auto;
+}
+.modal-content .modal-btn {
+  margin-left: 30px;
+  width: 200px;
+  letter-spacing: 8px;
+}
+.link{
+  display: block;
+}
+p.error {
+  /* margin: 60px 10px 80px 120px; */
+  margin-left: 30px;
+  width: 300px;
+  margin-bottom: 15px;
+  color: red;
+  /* letter-spacing: 8px; */
+}
+
+
+.header-main {
+  margin-top: 180px;
+  margin-bottom: 300px;
+}
+input#date1 {
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+input#date1 {
+  font-family: pfdintextcomppro-regular;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+form{
+  position: relative !important;
+  margin-top: 52px;
+}
+
+/*ROTATE UPDATE QUESTIONS*/
+.rotate:hover{
+  -webkit-animation:spin 0.3s linear ;
+  animation:spin 0.3s linear ;
+}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/*ROTATE UPDATE QUESTIONS*/
+
+.social{
+  height: 20px !important;
+  width: 20px !important;
+  display: block;
+}
+
+.facebook{
+  background-image: url(../images/facebook.png);
+}
+.logo {
+  height: 50px;
+  background: url(../images/logo.png) no-repeat;
+  background-position: center;
+}
+.vk{
+  background-image: url(../images/vk.png);
+}
+.twit{
+  background-image: url(../images/twit.png);
+}
+.inst{
+  background-image: url(../images/inst.png);
+}
+.pinit{
+  background-image: url(../images/pinit.png);
+}
+
+.facebook:hover{
+  background-image: url(../images/facebook_hover.png);
+}
+.vk:hover{
+  background-image: url(../images/vk_hover.png);
+}
+.twit:hover{
+  background-image: url(../images/tweter_hover.png);
+}
+.inst:hover{
+  background-image: url(../images/inst_hover.png);
+}
+.pinit:hover{
+  background-image: url(../images/pin_hover.png);
+}
+
+.button_header {
+  float: none !important;
+  margin: 0 auto !important;
+  width: 163px !important;
+  height: 80px !important;
+  background-color: black !important;
+  color: white !important;
+  font-family: pfdintextcomppro-regular;
+  font-size: 17px;
+  letter-spacing: 5.4px;
+  text-align: center !important;
+  padding: 0px;
+  text-transform: uppercase;
+  border:none;
+}
+.button--ujarak::before{
+  background: #a0c64c !important;
+}
+
+.zapic_linc {
+  color: white !important;
+  font-weight: 100;
+  text-decoration: none !important;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  letter-spacing: 5.4px;
+  display: block;
+  padding-left: 7px;
+  line-height: 78px;
+}
+.button_zapic {
+  border: 3px solid black;
+  width: 225px;
+  height: 70px;
+  letter-spacing: 8px;
+  font-size: 24px;
+  padding: 0px;
+  font-family: pfdintextcomppro-regular;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+
+ul.main-manu.menu>li>a:hover{
+  color: #8e8c8d !important;
+  text-decoration: none;
+}
+.hover_link:hover{
+  color: #8e8c8d !important;
+  text-decoration: none;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #000;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+input.review {
+  margin-bottom: 40px;
+}
