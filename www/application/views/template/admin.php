@@ -20,6 +20,7 @@
   <div class="wrap container">
     <div class="header clearfix">
       <div class="col-md-4 col-xs-4 pull-left"><a href='/' class="logo"></a></div>
+
       <div class="col-md-3 col-xs-3 pull-right text_admin">
         <p>Первый Мужской «БАРБЕРШОП» © 2012
           Ростов- на- Дону, ул. Соколова, 39<br>
@@ -1816,7 +1817,7 @@
                   <li><a href="#" data-toggle="modal" data-target="#add_new_photo">+ добавить фото</a></li>
                 </ul>
 
-                <form name="add_new_photo" class="form-inline" action="" method="">
+                <form id="upload-form" name="add_new_photo" class="form-inline" action="<?php echo URL::site('avatar/upload') ?>" method="post" enctype="multipart/form-data">
                   <div class="modal fade" id="add_new_photo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog modal-lg" role="document">
                       <div class="modal-content">
@@ -1831,7 +1832,7 @@
                             </div>
                             <div class="col-xs-8">
                               <span class="col-xs-2">
-                                <input type="file" class="form-control">
+                                <input type="file" class="form-control" name="avatar" id="avatar" />
                               </span>
                               <span class="col-xs-10">
                                 <p class="desc">
@@ -1843,7 +1844,7 @@
 
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-cofirm">сохранить</button>
+                          <button type="submit" class="btn btn-cofirm">сохранить</button>
                           <button type="button" class="btn btn-delete" data-dismiss="modal">удалить</button>
                         </div>
                       </div>
@@ -1856,141 +1857,11 @@
             <div class="col-xs-12">
 
               <!--inner item-->
-              <form name="news_id_1234" class="form-inline" action="" method="">
-                <table class="table inner-tabs" id="news_id_1234">
-                  <tr>
-                    <td width="90"></td>
-                    <td>Фото новости</td>
-                    <td><a href="#" class="icon icon-edit" data-toggle="modal" data-target="#myModal1">редактировать</a></td>
-                    <td><a href="#" class="icon icon-remove">удалить</a></td>
-                  </tr>
-                </table>
-
-                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Новости 1</h4>
-                      </div>
-                      <div class="modal-body">
-                        <div class="form-group">
-                          <div class="col-xs-4">
-                            <label >Добавить фото маленькое</label>
-                          </div>
-                          <div class="col-xs-8">
-                            <span class="col-xs-2">
-                              <input type="file" class="form-control">
-                            </span>
-                            <span class="col-xs-10">
-                              <p class="desc">
-                                размер загрудаемого изображения 305x305px
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-cofirm">сохранить</button>
-                        <button type="button" class="btn btn-delete" data-dismiss="modal">удалить</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+              <? require('admin_template/news_tmp_admin.php'); ?>
               <!--inner end-->
 
 
-              <!--inner item-->
-              <form name="news_id_4321" class="form-inline" action="" method="">
-                <table class="table inner-tabs" id="news_id_4321">
-                  <tr>
-                    <td width="90"></td>
-                    <td>Фото новости</td>
-                    <td><a href="#" class="icon icon-edit" data-toggle="modal" data-target="#myModal2">редактировать</a></td>
-                    <td><a href="#" class="icon icon-remove">удалить</a></td>
-                  </tr>
-                </table>
 
-                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Новости 2</h4>
-                      </div>
-                      <div class="modal-body">
-                        <div class="form-group">
-                          <div class="col-xs-4">
-                            <label >Добавить фото маленькое</label>
-                          </div>
-                          <div class="col-xs-8">
-                            <span class="col-xs-2">
-                              <input type="file" class="form-control">
-                            </span>
-                            <span class="col-xs-10">
-                              <p class="desc">
-                                размер загрудаемого изображения 305x305px
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-cofirm">сохранить</button>
-                        <button type="button" class="btn btn-delete" data-dismiss="modal">удалить</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-              <!--inner end-->
-
-
-              <!--inner item-->
-              <form name="news_id_2211" class="form-inline" action="" method="">
-                <table class="table inner-tabs" id="news_id_2211">
-                  <tr>
-                    <td width="90"></td>
-                    <td>Фото новости</td>
-                    <td><a href="#" class="icon icon-edit" data-toggle="modal" data-target="#myModal3">редактировать</a></td>
-                    <td><a href="#" class="icon icon-remove">удалить</a></td>
-                  </tr>
-                </table>
-
-                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Новости 3</h4>
-                      </div>
-                      <div class="modal-body">
-                        <div class="form-group">
-                          <div class="col-xs-4">
-                            <label >Добавить фото маленькое</label>
-                          </div>
-                          <div class="col-xs-8">
-                            <span class="col-xs-2">
-                              <input type="file" class="form-control">
-                            </span>
-                            <span class="col-xs-10">
-                              <p class="desc">
-                                размер загрудаемого изображения 305x305px
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-cofirm">сохранить</button>
-                        <button type="button" class="btn btn-delete" data-dismiss="modal">удалить</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-              <!--inner end-->
 
 
 

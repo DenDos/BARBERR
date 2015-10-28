@@ -23,6 +23,7 @@ class Controller_Admin extends Controller_Template {
     $masters = new Model_Master();
     $app = new Model_Application();
     $app_all = new Model_Application();
+    $img = new Model_Imgnew();
 
 
     $date = Arr::get($_GET, 'date', '');
@@ -57,6 +58,7 @@ class Controller_Admin extends Controller_Template {
     $services = $service_app->get_all();
 
     $masters = $masters->get_all();
+    $img = $img->get_all();
 
     $this->template->content = View::factory('template/admin')->bind('clients', $clients)
                                                               ->bind('questions', $questions)
@@ -66,6 +68,7 @@ class Controller_Admin extends Controller_Template {
                                                               ->bind('service', $service)
                                                               ->bind('master', $master)
                                                               ->bind('date', $date)
+                                                              ->bind('img', $img)
                                                               ->bind('all_clients', $all_clients);
 
   }

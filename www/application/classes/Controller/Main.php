@@ -11,7 +11,7 @@ class Controller_Main extends Controller_Template {
     $appR = new Model_Review();
     $array = array('status' => 1);
     $data["message"] ="";
-
+    $img = new Model_Imgnew();
     $questions = ORM::factory('Question')
       ->where('status', '=', 1)
       ->limit(2)
@@ -28,8 +28,8 @@ class Controller_Main extends Controller_Template {
       ->find_all();
     $masters = ORM::factory('Master')
       ->find_all();
-
-
+    $img = ORM::factory('Imgnew')
+      ->find_all();
     if (empty($questions[0])) $data["questions"] = 0 ;
     else $data["questions"] =$questions;
 
@@ -37,6 +37,7 @@ class Controller_Main extends Controller_Template {
     else $data["reviews"] =$reviews;
     $data["services"] =$services;
     $data["masters"] =$masters;
+    $data["img"] =$img;
     $this->template->content = View::factory('template/home',$data);
   }
 } // End main

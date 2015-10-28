@@ -98,42 +98,14 @@
   </div>
   <div class="slider-block">
     <button type="button" data-role="none" style="display: block;" aria-label="Previous" role="button" class="slick-prev slick-arrow">Previous</button>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
+    <? foreach($img as $im): ?>
+    <div class="col-xs-2"><img src="img/<?= $im->src?>" alt="">
       <div class="desc-block">
         <h5>Стрижка</h5>
         <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
       </div>
     </div>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
-      <div class="desc-block">
-        <h5>Стрижка</h5>
-        <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
-      </div>
-    </div>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
-      <div class="desc-block">
-        <h5>Стрижка</h5>
-        <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
-      </div>
-    </div>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
-      <div class="desc-block">
-        <h5>Стрижка</h5>
-        <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
-      </div>
-    </div>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
-      <div class="desc-block">
-        <h5>Стрижка</h5>
-        <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
-      </div>
-    </div>
-    <div class="col-xs-2"><img src="images/services-slider-item.png" alt="">
-      <div class="desc-block">
-        <h5>Стрижка</h5>
-        <p class="more-btn"><a href="" data-toggle="modal" data-target="#servicesModal">подробнее</a></p>
-      </div>
-    </div>
+    <? endforeach; ?>
   </div>
   <div class="container">
     <div class="services">
