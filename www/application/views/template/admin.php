@@ -24,6 +24,7 @@
         <p>Первый Мужской «БАРБЕРШОП» © 2012
           Ростов- на- Дону, ул. Соколова, 39<br>
           (863) 2 261 756</p>
+        <a href="auth/logout" class="btn-delete pull-right">Выйти</a>
       </div>
     </div>
     <div class="content clearfix">
@@ -68,20 +69,20 @@
 
 
           <?
-/********************PIPS*******************************************/
-              require('admin_template/pips_tmp_admin.php');
-/***************************************************************/
+          /********************PIPS*******************************************/
+          require('admin_template/pips_tmp_admin.php');
+          /***************************************************************/
           ?>
 
           <?
-/********************PIPS MASTER*******************************************/
-              require('admin_template/pips_master_tmp_admin.php');
-/***************************************************************/
+          /********************PIPS MASTER*******************************************/
+          require('admin_template/pips_master_tmp_admin.php');
+          /***************************************************************/
           ?>
           <?
-/********************PIPS ALL*******************************************/
-              require('admin_template/pips_all_tmp_admin.php');
-/***************************************************************/
+          /********************PIPS ALL*******************************************/
+          require('admin_template/pips_all_tmp_admin.php');
+          /***************************************************************/
           ?>
 
 
@@ -90,7 +91,7 @@
 
           <!--услги start-->
           <?
-require('admin_template/service_tmp_admin.php');
+          require('admin_template/service_tmp_admin.php');
           ?>
           <!--услги end-->
 
@@ -2250,14 +2251,14 @@ require('admin_template/service_tmp_admin.php');
 
           <!--questions start-->
           <?
-require('admin_template/questions_tmp_admin.php');
+          require('admin_template/questions_tmp_admin.php');
           ?>
           <!--questions end-->
 
 
           <!--reviews start-->
           <?
-require('admin_template/reviews_tmp_admin.php');
+          require('admin_template/reviews_tmp_admin.php');
           ?>
           <!--reviews end-->
 
