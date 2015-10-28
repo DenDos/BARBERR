@@ -32,6 +32,7 @@
               <textarea name="description" class="form-control"><?= $service->description;?></textarea>
             </div>
           </div>
+<!--
           <div class="form-group">
             <div class="col-xs-4">
               <label >Добавить фото</label>
@@ -48,6 +49,7 @@
               </span>
             </div>
           </div>
+-->
 
         </div>
         <div class="modal-footer">

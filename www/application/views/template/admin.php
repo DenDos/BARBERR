@@ -19,7 +19,7 @@
 
   <div class="wrap container">
     <div class="header clearfix">
-      <div class="col-md-4 col-xs-4 pull-left"><div class="logo"></div></div>
+      <div class="col-md-4 col-xs-4 pull-left"><a href='/' class="logo"></a></div>
       <div class="col-md-3 col-xs-3 pull-right text_admin">
         <p>Первый Мужской «БАРБЕРШОП» © 2012
           Ростов- на- Дону, ул. Соколова, 39<br>

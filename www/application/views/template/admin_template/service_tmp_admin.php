@@ -1,4 +1,4 @@
- <div id="service" role="tabpanel" class="tab-pane">
+<div id="service" role="tabpanel" class="tab-pane">
   <!-- Tab title -->
   <div class="col-xs-12">
     <div class="col-xs-3">

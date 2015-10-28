@@ -222,6 +222,7 @@ form{
 }
 .logo {
   height: 50px;
+  display: block;
   background: url(../images/logo.png) no-repeat;
   background-position: center;
 }
